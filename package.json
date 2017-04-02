@@ -1,0 +1,36 @@
+{
+  "name": "mcp9808-sensor",
+  "version": "0.0.1",
+  "description": "A Node.js I2C module for the Microchip MCP9808 digital temperature sensor",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liqdfire/mcp9808-sensor.git"
+  },
+  "keywords": [
+    "microchip",
+    "mcp9808",
+    "temperature",
+    "Adafruit",
+    "Raspberry",
+    "Pi",
+    "Beaglebone"
+  ],
+  "author": "Liqdfire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liqdfire/mcp9808-sensor/issues"
+  },
+  "homepage": "https://github.com/liqdfire/mcp9808-sensor#readme",
+  "dependencies": {
+    "i2c-bus": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/i2c-bus": "^1.0.9",
+    "typescript": "^2.2.2"
+  }
+}
