@@ -14,7 +14,6 @@ let config;
 startLoop();
 function startLoop() {
     return __awaiter(this, void 0, void 0, function* () {
-        //sensor.wake();
         sensor.readConfig().then((result) => {
             console.log("config " + result);
         });

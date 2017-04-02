@@ -46,21 +46,6 @@ class MCP9808 {
         this.address = address;
         this.i2c = I2C.openSync(i2cbus);
     }
-    /*readConfig(): number {
-        let buffer = new Buffer(2);
-        this.i2c.readI2cBlockSync(this.address, Registers.Config, 2, buffer);
-        let config = this.uint16(buffer[0], buffer[1]);
-        return config;
-
-       this.i2c.readI2cBlock(this.address, Registers.Config, 2, new Buffer(2), (err, bytesread, result) => {
-                if(err) {
-                    return reject(err);
-                }
-
-                let config: MCP9808_Configuration = this.uint16(buffer[0], buffer[1]);
-                resolve(config);
-            });
-    }*/
     readConfig() {
         return new Promise((resolve, reject) => {
             this.i2c.readI2cBlock(this.address, Registers.Config, 2, new Buffer(2), (err, bytesread, result) => {
